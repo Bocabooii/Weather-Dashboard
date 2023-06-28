@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Alexis Weather Dashboard</title>
 </head>
 
 <body>
@@ -13,13 +14,73 @@
         <h1 id="title">Weather Dashboard</h1>
     </header>
 
+    <!-- Search bar for searching a city's weather -->
     <div>
         <h2>Search for a City:</h2>
         <form id="search-form">
             <input id="search-input" type="text" placeholder="Search">
-            <button class="btn btn-info btn-block">Search</button>
+            <button id="searchBtn" class="btn btn-info btn-block">Search</button>
         </form>
     </div>
+
+    <!-- Create a history of all the citys that have been searched -->
+    <div id="cardHistory">
+        <h2>Search History</h2>
+        <ul id="city-history">
+        </ul>   
+    </div>
+    
+    <!-- This area will display the current searched citys forecast -->
+
+    <aside id="currentWeather">
+        <h3 id="dayForecast">Name of city</h3>
+        <h3 id="cityName">City Name</h3>
+        <p id="tempDay">current temp</p>
+        <p id="windDay">current wind</p>  
+        <p id="humidityDay">current humidity</p>  
+    </aside>
+    
+    <!-- the five day forecast will display here -->
+
+    <section id="futureForecasting">
+        <aside class="forecastOne">
+            <h2 id="dayForecast1">Day One</h2>
+            <p id="tempDay1">Temp</p>
+            <p id="windDay1">Wind</p>
+            <p id="humidityDay1">humidity</p>
+        </aside>    
+        <aside class="forecastTwo">
+            <h2 id="dayForecast2">Day One</h2>
+            <p id="tempDay2">Temp</p>
+            <p id="windDay2">Wind</p>
+            <p id="humidityDay2">humidity</p>
+        </aside>
+        <aside class="forecastThree">
+            <h2 id="dayForecast3">Day One</h2>
+            <p id="tempDay3">Temp</p>
+            <p id="windDay3">Wind</p>
+            <p id="humidityDay3">humidity</p>
+        </aside>
+        <aside class="forecastFour">
+            <h2 id="dayForecast4">Day One</h2>
+            <p id="tempDay4">Temp</p>
+            <p id="windDay4">Wind</p>
+            <p id="humidityDay4">humidity</p>
+        </aside>
+        <aside class="forecastFive">
+            <h2 id="dayForecast5">Day One</h2>
+            <p id="tempDay5">Temp</p>
+            <p id="windDay5">Wind</p>
+            <p id="humidityDay5">humidity</p>
+        </aside>
+    </section>
+
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
+
+
+
